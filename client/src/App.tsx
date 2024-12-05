@@ -1,13 +1,20 @@
-import "./App.css";
-import img from "./assets/images/sau1teur.gif";
 import { Outlet } from "react-router-dom";
+import "./App.css";
+
+import img from "./assets/images/sau1teur.gif";
 import EvenementsList from "./components/EvenementsList";
 import { events } from "./components/Evenements";
+import Home from "./pages/Home";
+import LoginPage from "./pages/LoginPage";
+
+
+
 function App() {
 	return (
 		<>
 			<h3>
 				Cherchez-moi ! <img src="./assets/images/sau1teur.gif" />
+
 				{/* //ne marche pas pour l'instant */}{" "}
 			</h3>
 			<div>
@@ -15,6 +22,9 @@ function App() {
 					async
 					src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e"
 				></script>
+        <Outlet />
+				<h2></h2>
+
 			</div>
 			<div className="gcse-search"></div>
 			{/* <main><Outlet /> */}

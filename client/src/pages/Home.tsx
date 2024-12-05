@@ -1,6 +1,6 @@
 
+
 import img from "../assets/images/pub_charantaises.png"
-import Grimpeur
 
 function Home() {
 	return (
