@@ -1,8 +1,11 @@
-import "./App.css";
-import img from "./assets/images/sau1teur.gif";
 import { Outlet } from "react-router-dom";
+import "./App.css";
+// import img from “./assets/images/sau1teur.gif”;
+import Header from "./components/header.tsx";
 import EvenementsList from "./components/EvenementsList";
 import { events } from "./components/Evenements";
+// import Home from “./pages/Home”;
+// import LoginPage from “./pages/LoginPage”;
 function App() {
 	return (
 		<>
@@ -17,12 +20,13 @@ function App() {
 				></script>
 			</div>
 			<div className="gcse-search"></div>
-
-			<button>Se déconnecter</button>
+			{/* <main><Outlet /> */}
+			
 
 			<img src="../assets/images/pub_charantaises.png" />
-
-			<main></main>
+			<h2>Nos événements</h2>
+			<EvenementsList evenements={events} />
+			
 			<footer>
 				<p className="liens_footer">
 					<a href="https://myspace.com/">myspace </a>
@@ -36,5 +40,4 @@ function App() {
 		</>
 	);
 }
-
 export default App;
