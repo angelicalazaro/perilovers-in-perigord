@@ -18,7 +18,6 @@ function App() {
 				<Outlet />
 
 				{/* biome-ignore lint/a11y/useAltText: <explanation> */}
-
 			</main>
 			<footer>
 				<p className="liens_footer">

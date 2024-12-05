@@ -14,9 +14,11 @@ function Header() {
 					<button type="button" className="boutons_du_footer">
 						<Link to="/profils">Nos membres</Link>
 					</button>
+
 					<button type="button" className="boutons_du_footer">
 						Nos événements
 					</button>
+
 					<button type="button" className="boutons_du_footer">
 						Livre d'or
 					</button>
