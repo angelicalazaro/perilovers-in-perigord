@@ -17,12 +17,11 @@ function App() {
 				></script>
 			</div>
 			<div className="gcse-search"></div>
-			{/* <main><Outlet /> */}
+
 			<button>Se déconnecter</button>
-			<button>Vous êtes le xème visiteur de notre site !</button>
+
 			<img src="../assets/images/pub_charantaises.png" />
-			<h2>Nos événements</h2>
-			<EvenementsList evenements={events} />
+
 			<main></main>
 			<footer>
 				<p className="liens_footer">
