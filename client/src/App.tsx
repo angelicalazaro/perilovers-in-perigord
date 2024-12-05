@@ -7,6 +7,7 @@ import { events } from "./components/Evenements";
 import Home from "./pages/Home.tsx";
 // import Home from “./pages/Home”;
 // import LoginPage from “./pages/LoginPage”;
+
 function App() {
 	return (
 		<>
@@ -20,7 +21,8 @@ function App() {
 			<main>
 				<Outlet />
 
-				<img src="../assets/images/pub_charantaises.png" />
+				{/* biome-ignore lint/a11y/useAltText: <explanation> */}
+
 			</main>
 			<footer>
 				<p className="liens_footer">

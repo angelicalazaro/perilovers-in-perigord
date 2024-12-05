@@ -1,6 +1,7 @@
 // import Vichy from "../assets/images/Vichy.jpg";
-import "./header.css";
+import "../CSS/header.css";
 import Logo from "../assets/images/Logo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
 	return (
@@ -9,7 +10,9 @@ function Header() {
 				<img src={Logo} alt="Logo_Périlove" id="Logo" />
 				<nav className="NavBar">
 					<button type="button" className="boutons_du_footer">
-						Nos membres
+						<Link to="/profils" >
+							Nos membres
+						</Link>
 					</button>
 					<button type="button" className="boutons_du_footer">
 						Nos événements
