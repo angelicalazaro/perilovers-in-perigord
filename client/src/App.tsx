@@ -1,5 +1,8 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import img from "./assets/images/sau1teur.gif";
+import Home from "./pages/Home";
+import LoginPage from "./pages/LoginPage";
+// import img from "./assets/images/sau1teur.gif";
 
 function App() {
 	return (
@@ -11,6 +14,7 @@ function App() {
 			<div className="gcse-search">
 				Cherchez-moi ! <img src="./assets/images/sau1teur.gif" />
 				{/* //ne marche pas pour l'instant */}
+        <Outlet />
 				<h2></h2>
 			</div>
 			<footer>
