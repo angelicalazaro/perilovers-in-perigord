@@ -10,6 +10,7 @@ function EvenementCard({ evenement }: EvenementCardProps) {
 	return (
 		<>
 			<figure className="card">
+        <img src = {evenement.picture}/>
 				<h3>{evenement.name}</h3>
 				<p>
 					{evenement.description} <br />
