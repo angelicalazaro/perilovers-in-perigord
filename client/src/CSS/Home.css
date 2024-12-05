@@ -58,10 +58,10 @@ h3 {
 }
 
 .visitor {
-background-color: blue;
-color:white;
-margin : 1.25em;
-width: 7em;
-padding: .25em;
-font-family: 'Times New Roman', Times, serif;
+	background-color: blue;
+	color: white;
+	margin: 1.25em;
+	width: 7em;
+	padding: .25em;
+	font-family: "Times New Roman", Times, serif;
 }

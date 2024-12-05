@@ -6,7 +6,6 @@ import "../CSS/Home.css";
 import Header from "../components/header";
 
 function Home() {
-	
 	const [visitorCount, setVisitorCount] = useState(10245); // Déplacez VisitorCounter ici
 	useEffect(() => {
 		// Simulation d'une augmentation du nombre de visiteurs
@@ -25,10 +24,19 @@ function Home() {
 				<Header />
 			</header>
 			<div>
-				<p className="visitor">Visiteurs : {visitorCount}</p>
+				<p className="visitor">
+					Visiteurs : {visitorCount}{" "}
+					<img
+						src="https://www.smiley-lol.com/smiley/energique/sautillant.gif"
+						alt="test"
+					/>
+				</p>
 			</div>
 
-			<img src="../assets/images/pub_charantaises.png" alt="charantaise forever"/>
+			<img
+				src="../assets/images/pub_charantaises.png"
+				alt="charantaise forever"
+			/>
 			<h2>Nos événements</h2>
 			<div id="events">
 				<EvenementsList evenements={events} />
