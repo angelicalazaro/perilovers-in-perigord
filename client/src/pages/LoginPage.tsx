@@ -27,6 +27,9 @@ const LoginPage: React.FC = () => {
 
   return (
     <section className="loginPage">
+        <section className="logoLoginPage">
+            <img src="./src/assets/images/logo_perilove.png" alt="logoPerilove"/>
+        </section>
       <div className="formulaire">
         <form onSubmit={handleSubmit}>
           <div className="label1">

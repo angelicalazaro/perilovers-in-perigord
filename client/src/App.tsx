@@ -1,12 +1,11 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
-import LoginPage from "./pages/LoginPage";
 // import img from "./assets/images/sau1teur.gif";
 
 function App() {
 	return (
 		<>
+      <Outlet />
 			<script
 				async
 				src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e"
@@ -14,7 +13,7 @@ function App() {
 			<div className="gcse-search">
 				Cherchez-moi ! <img src="./assets/images/sau1teur.gif" />
 				{/* //ne marche pas pour l'instant */}
-        <Outlet />
+
 				<h2></h2>
 			</div>
 			<footer>
