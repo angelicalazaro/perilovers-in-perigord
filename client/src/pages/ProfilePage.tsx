@@ -1,8 +1,15 @@
-import type React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../CSS/ProfilePage.css";
 
-const ProfilePage = () => {
+interface Profile {
+	id: string;
+	name: string;
+	age: number;
+	picture: string;
+}
+
+const ProfilePage: React.FC = () => {
+	const [profiles, setProfiles] = useState<Profile[]>([]);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [rememberMe, setRememberMe] = useState(false);
@@ -12,6 +19,35 @@ const ProfilePage = () => {
 		ageFrom: "",
 		ageTo: "",
 	});
+
+	// Fetch profiles from API
+	useEffect(() => {
+		const fetchProfiles = async () => {
+			try {
+				const response = await fetch(
+					"https://randomuser.me/api/?results=128&nat=us,gb,fr", // Fetch 12 users for filtering
+				);
+				const data = await response.json();
+
+				// Filter profiles for age > 50
+				const filteredProfiles = data.results
+					.filter((user: any) => user.dob.age > 50) // Keep only users older than 50
+					.slice(0, 6) // Limit to 6 profiles
+					.map((user: any) => ({
+						id: user.login.uuid,
+						name: `${user.name.first} ${user.name.last}`,
+						age: user.dob.age,
+						picture: user.picture.large,
+					}));
+
+				setProfiles(filteredProfiles);
+			} catch (error) {
+				console.error("Error fetching profiles:", error);
+			}
+		};
+
+		fetchProfiles();
+	}, []);
 
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
@@ -27,13 +63,19 @@ const ProfilePage = () => {
 
 			<main className="profile-container">
 				<div className="profile-images">
-					{Array(6)
-						.fill(null)
-						.map((_, index) => (
-							<div key={index} className="profile-card">
-								<img src="https://via.placeholder.com/150" alt="Profile" />
+					{profiles.length > 0 ? (
+						profiles.map((profile) => (
+							<div key={profile.id} className="profile-card">
+								<img src={profile.picture} alt={`Profile of ${profile.name}`} />
+								<div className="profile-info">
+									<h3>{profile.name}</h3>
+									<p>Age: {profile.age}</p>
+								</div>
 							</div>
-						))}
+						))
+					) : (
+						<p>Loading profiles...</p>
+					)}
 				</div>
 
 				<div className="form-container">
