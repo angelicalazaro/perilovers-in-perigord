@@ -1,21 +1,54 @@
 #Logo {
-	width: 15%;
+	width: 80%;
+	margin-top: 21px;
+	margin-left: 28px;
 }
 
 header {
-	background-image: url(/src/assets/images/Vichy.jpg);
-	height: 11rem;
-	background-size: contain;
-	/* display: flex;
-	flex-direction: column; */
+	background-image: url(https://img.freepik.com/vecteurs-libre/fond-motif-rose_78370-3289.jpg?t=st=1733412152~exp=1733415752~hmac=f4d184b7f56f9950136c97021b92008a0633994c6cb50b661924affe77fbd306&w=740);
+	height: 100%;
+	width: 20%;
+	position: fixed; /* Fixé pour qu'il reste en place même en scrollant */
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	top: 0px;
 }
 
 .NavBar {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .boutons_du_footer {
-	width: 10%;
+	width: 80%;
 	margin-top: 8px;
+}
+
+main {
+	margin-left: 20%;
+	padding: 20px;
+}
+
+.boutons_du_footer {
+	width: 80%;
+	margin-top: 22px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	font-weight: bold;
+	height: 50px;
+	border-width: 5px;
+	color: rgb(255, 255, 255);
+	border-color: rgba(192, 51, 155, 1);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	box-shadow: inset 0px 0px 28px -15px #bbdaf7;
+	text-shadow: inset 1px 1px 0px rgba(238, 211, 227, 1);
+	background: linear-gradient(rgba(221, 37, 220, 1), rgba(255, 112, 175, 1));
+}
+.boutons_du_footer:hover {
+	background: linear-gradient(rgba(255, 112, 175, 1), rgba(221, 37, 220, 1));
 }
