@@ -1,12 +1,18 @@
-import "./App.css";
+
+
+import img from "../assets/images/pub_charantaises.png"
 
 function Home() {
 	return (
 		<>
-			<button>Se déconnecter</button>
+			{/* <button>Se déconnecter</button>
 			<button>Vous êtes le xème visiteur de notre site !</button>
+			<img src="../assets/images/pub_charantaises.png"/>
+<h2>Nos événements</h2>
 
-			<main></main>
+			<main>
+			
+			</main> */}
 		</>
 	);
 }
