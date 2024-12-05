@@ -2,7 +2,7 @@ import img from "../assets/images/pub_charantaises.png";
 import EvenementsList from "../components/EvenementsList";
 import { events } from "../components/Evenements";
 import React, { useState, useEffect } from "react";
-import "../components/Home.css";
+import "../CSS/Home.css";
 import Header from "../components/header";
 
 function Home() {
@@ -20,7 +20,6 @@ function Home() {
 
 	return (
 		<>
-		
 			<header>
 				<Header />
 			</header>

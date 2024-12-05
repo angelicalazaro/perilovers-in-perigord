@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 // import img from “./assets/images/sau1teur.gif”;
-import Header from "./components/header.tsx";
+
 import EvenementsList from "./components/EvenementsList";
 import { events } from "./components/Evenements";
 import Home from "./pages/Home.tsx";
@@ -10,9 +10,6 @@ import Home from "./pages/Home.tsx";
 function App() {
 	return (
 		<>
-
-
-
 			<div>
 				<script
 					async
@@ -24,7 +21,6 @@ function App() {
 				<Outlet />
 
 				<img src="../assets/images/pub_charantaises.png" />
-
 			</main>
 			<footer>
 				<p className="liens_footer">
