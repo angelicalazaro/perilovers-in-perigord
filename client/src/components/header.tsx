@@ -1,14 +1,35 @@
-import "./App.css";
+// import Vichy from "../assets/images/Vichy.jpg";
+import "./header.css";
+import Logo from "../assets/images/Logo.png";
 
 function Header() {
 	return (
 		<>
 			<header>
-				<img src="" alt="balec de l'alt on est dans les années 2000" />
-				<h1>N°1 des sites de rencontres pour Perigordins et Perigordines</h1>
-			</header>
+				<img src={Logo} alt="Logo_Périlove" id="Logo" />
+				<nav className="NavBar">
+					<button type="button" className="boutons_du_footer">
+						Nos membres
+					</button>
+					<button type="button" className="boutons_du_footer">
+						Nos événements
+					</button>
+					<button type="button" className="boutons_du_footer">
+						Livre d'or
+					</button>
+					<button type="button" className="boutons_du_footer">
+						Forum
+					</button>
+					<button type="button" className="boutons_du_footer">
+						FAQ
+					</button>
+					<button type="button" className="boutons_du_footer">
+						Aidez-moi !
+					</button>
+				</nav>
 
-			<main></main>
+				{/* <img src={Vichy} alt="VichyBackground" id="vichy_background" /> */}
+			</header>
 		</>
 	);
 }
