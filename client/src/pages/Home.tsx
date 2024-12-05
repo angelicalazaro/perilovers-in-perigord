@@ -1,7 +1,6 @@
-import pub_charantaises from "../assets/images/pub_charantaises.png";
 import EvenementsList from "../components/EvenementsList";
 import { events } from "../components/Evenements";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../CSS/Home.css";
 import Header from "../components/header";
 

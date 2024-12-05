@@ -17,10 +17,12 @@ function Header() {
 							<img src="https://www.smiley-lol.com/smiley/heureux/coeurtendu.gif" />
 						</Link>
 					</button>
+
 					<button type="button" className="boutons_du_footer">
 						Nos événements{" "}
 						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/expressif07.gif" />
 					</button>
+
 					<button type="button" className="boutons_du_footer">
 						Livre d'or{" "}
 						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/blah1.gif" />
