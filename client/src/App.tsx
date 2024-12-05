@@ -17,16 +17,16 @@ function App() {
 				<script
 					async
 					src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e"
-				></script>
+				/>
 			</div>
 			<div className="gcse-search"></div>
-			{/* <main><Outlet /> */}
-			
+			<main>
+				<Outlet />
 
-			<img src="../assets/images/pub_charantaises.png" />
-			<h2>Nos événements</h2>
-			<EvenementsList evenements={events} />
-			
+				<img src="../assets/images/pub_charantaises.png" />
+				<h2>Nos événements</h2>
+				<EvenementsList evenements={events} />
+			</main>
 			<footer>
 				<p className="liens_footer">
 					<a href="https://myspace.com/">myspace </a>
