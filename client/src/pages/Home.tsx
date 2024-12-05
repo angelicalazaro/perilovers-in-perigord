@@ -27,7 +27,9 @@ function Home() {
 				<p className="visitor">Visiteurs : {visitorCount}</p>
 			</div>
 			<h2>Nos événements</h2>
-			<EvenementsList evenements={events} />
+			<div id="events">
+				<EvenementsList evenements={events} />
+			</div>
 		</>
 	);
 }
