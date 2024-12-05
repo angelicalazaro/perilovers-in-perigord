@@ -23,17 +23,20 @@ function Home() {
 				<Header />
 			</header>
 			<div>
-				<p className="visitor">Visiteurs : {visitorCount}</p>
+				<p className="visitor">
+					Visiteurs : {visitorCount}{" "}
+					<img
+						src="https://www.smiley-lol.com/smiley/energique/sautillant.gif"
+						alt="test"
+					/>
+				</p>
 			</div>
 
 			<img
 				src="../assets/images/pub_charantaises.png"
 				alt="charantaise forever"
 			/>
-			<h2 id="nos_events" className="rainbow">
-				<span className="text">Nos événements</span>
-			</h2>
-
+			<h2>Nos événements</h2>
 			<div id="events">
 				<EvenementsList evenements={events} />
 			</div>
