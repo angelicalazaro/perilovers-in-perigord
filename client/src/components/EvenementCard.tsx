@@ -1,5 +1,6 @@
 import type { Evenement } from "./Evenements";
 import { useState } from "react";
+import "../CSS/Home.css";
 
 interface EvenementCardProps {
 	evenement: Evenement;

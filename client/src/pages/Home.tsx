@@ -36,7 +36,9 @@ function Home() {
 				src="../assets/images/pub_charantaises.png"
 				alt="charantaise forever"
 			/>
-			<h2>Nos événements</h2>
+			<h2 id="nos_events" className="rainbow">
+				<span className="text">Nos événements</span>
+			</h2>
 			<div id="events">
 				<EvenementsList evenements={events} />
 			</div>
