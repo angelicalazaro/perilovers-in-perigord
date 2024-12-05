@@ -86,7 +86,7 @@ const ProfilePage: React.FC = () => {
 					<form onSubmit={handleSubmit}>
 						<div className="search-fields">
 							<div className="search-field">
-								<label>Je suis</label>
+								<label>Je suis :</label>
 								<input
 									type="text"
 									value={searchCriteria.gender}
@@ -99,7 +99,7 @@ const ProfilePage: React.FC = () => {
 								/>
 							</div>
 							<div className="search-field">
-								<label>je cherche</label>
+								<label>Je cherche : </label>
 								<input
 									type="text"
 									value={searchCriteria.seeking}
@@ -112,7 +112,7 @@ const ProfilePage: React.FC = () => {
 								/>
 							</div>
 							<div className="search-field">
-								<label>âge de</label>
+								<label>Âge de : </label>
 								<input
 									type="number"
 									value={searchCriteria.ageFrom}
@@ -123,7 +123,7 @@ const ProfilePage: React.FC = () => {
 										})
 									}
 								/>
-								<label>à</label>
+								<label>à : </label>
 								<input
 									type="number"
 									value={searchCriteria.ageTo}
@@ -138,7 +138,7 @@ const ProfilePage: React.FC = () => {
 						</div>
 
 						<div className="login-section">
-							<p>Vous êtes déjà inscrit ?</p>
+							<p>Vous êtes déjà inscrit(e) ?</p>
 							<input
 								type="email"
 								placeholder="adresse email"
@@ -158,7 +158,7 @@ const ProfilePage: React.FC = () => {
 										checked={rememberMe}
 										onChange={(e) => setRememberMe(e.target.checked)}
 									/>
-									se souvenir de moi
+									Se souvenir de moi
 								</label>
 							</div>
 							<button type="submit">Se connecter</button>
