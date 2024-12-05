@@ -5,32 +5,29 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import Home from "./pages/Home";
-import Profils from "./pages/Profils";
+// import Profils from "./pages/Profils";
 import LoginPage from "./pages/LoginPage";
 
-
 const router = createBrowserRouter([
-
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/login", // The root path
-        element: <LoginPage />,
-      },
-      {
-        path: "/home",
-        element: <Home />,
-      },
-      //{
-        //path: "/profils",
-        //element: <Profils />,
-      //},
-    ],
-  },
-])
-
+	{
+		path: "/",
+		element: <App />,
+		children: [
+			{
+				path: "/login", // The root path
+				element: <LoginPage />,
+			},
+			{
+				path: "/home",
+				element: <Home />,
+			},
+			//{
+			//path: "/profils",
+			//element: <Profils />,
+			//},
+		],
+	},
+]);
 
 // Find the root element in the HTML document
 const rootElement = document.getElementById("root");

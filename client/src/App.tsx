@@ -1,59 +1,45 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 
-import img from "./assets/images/sau1teur.gif";
+// import img from "./assets/images/sau1teur.gif";
 
 import Header from "./components/header.tsx";
 
 import EvenementsList from "./components/EvenementsList";
 import { events } from "./components/Evenements";
-import Home from "./pages/Home";
-import LoginPage from "./pages/LoginPage";
-
-
-
+// import Home from "./pages/Home";
+// import LoginPage from "./pages/LoginPage";
 
 function App() {
 	return (
 		<>
-
 			<header>
 				<Header />
 			</header>
-			<script
-				async
-				src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e"
-			></script>
+			<script async src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e" />
 			<div className="gcse-search">
-
-			<h3>
-
-				Cherchez-moi ! <img src="./assets/images/sau1teur.gif" />
-
-				{/* //ne marche pas pour l'instant */}{" "}
-			</h3>
+				<h3>
+					Cherchez-moi !{" "}
+					<img src="./assets/images/sau1teur.gif" alt="gif_sauteur" />
+					{/* //ne marche pas pour l'instant */}{" "}
+				</h3>
+			</div>
 			<div>
-				<script
-					async
-					src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e"
-				></script>
-        <Outlet />
-				<h2></h2>
-
+				<Outlet />
 			</div>
 
-			{/* <footer>
-
-			<div className="gcse-search"></div>
-			{/* <main><Outlet /> */}
-			<button>Se déconnecter</button>
-			<button>Vous êtes le xème visiteur de notre site !</button>
-			<img src="../assets/images/pub_charantaises.png" />
+			<div className="gcse-search">
+				{/* <main><Outlet /> */}
+				<button type="button">Se déconnecter</button>
+				<button type="button">
+					Vous êtes le xème visiteur de notre site !
+				</button>
+			</div>
+			<img src="../assets/images/pub_charantaises.png" alt="Pub" />
 			<h2>Nos événements</h2>
 			<EvenementsList evenements={events} />
-			<main></main>
-			<footer>
 
+			<footer>
 				<p className="liens_footer">
 					<a href="https://myspace.com/">myspace </a>
 					<a href="https://myspace.com/"> skyblog </a>
@@ -62,7 +48,7 @@ function App() {
 					<a href="https://myspace.com/"> wanadoo </a>
 					<a href="https://myspace.com/"> msn</a>
 				</p>
-			</footer> */}
+			</footer>
 		</>
 	);
 }

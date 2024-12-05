@@ -21,7 +21,7 @@ export const events: Evenement[] = [
 		description:
 			"Dans l’esprit des objets trouvés à Lascaux, un atelier où les visiteurs fabriquent des poteries à l’ancienne ou des bijoux en os et pierre.",
 		date: "dimanche 8 décembre 2024",
-		lieu: Bergerac,
+		lieu: "Bergerac",
 	},
 	{
 		id: 3,
