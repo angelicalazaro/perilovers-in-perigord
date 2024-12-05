@@ -1,18 +1,15 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 // import img from “./assets/images/sau1teur.gif”;
-import Header from "./components/header.tsx";
+
 import EvenementsList from "./components/EvenementsList";
 import { events } from "./components/Evenements";
+import Home from "./pages/Home.tsx";
 // import Home from “./pages/Home”;
 // import LoginPage from “./pages/LoginPage”;
 function App() {
 	return (
 		<>
-			<h3>
-				Cherchez-moi ! <img src="./assets/images/sau1teur.gif" />
-				{/* //ne marche pas pour l'instant */}{" "}
-			</h3>
 			<div>
 				<script
 					async
@@ -24,8 +21,6 @@ function App() {
 				<Outlet />
 
 				<img src="../assets/images/pub_charantaises.png" />
-				<h2>Nos événements</h2>
-				<EvenementsList evenements={events} />
 			</main>
 			<footer>
 				<p className="liens_footer">
