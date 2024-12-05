@@ -1,6 +1,7 @@
 import type React from "react";
 import { useState } from "react";
 import "../CSS/ProfilePage.css";
+import Header from "../components/header";
 
 const ProfilePage = () => {
 	const [email, setEmail] = useState("");
@@ -21,6 +22,7 @@ const ProfilePage = () => {
 	return (
 		<div className="profile-page">
 			<header>
+				<Header />
 				<div className="logo">LOGO</div>
 				<h1>PAGE PROFILES</h1>
 			</header>

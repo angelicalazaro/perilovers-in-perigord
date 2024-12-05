@@ -7,12 +7,12 @@ function Header() {
 	return (
 		<>
 			<header>
-				<img src={Logo} alt="Logo_Périlove" id="Logo" />
+				<Link to="/">
+					<img src={Logo} alt="Logo_Périlove" id="Logo" />
+				</Link>
 				<nav className="NavBar">
 					<button type="button" className="boutons_du_footer">
-						<Link to="/profils" >
-							Nos membres
-						</Link>
+						<Link to="/profils">Nos membres</Link>
 					</button>
 					<button type="button" className="boutons_du_footer">
 						Nos événements
