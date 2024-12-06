@@ -9,7 +9,12 @@
 
 footer {
 	background-color: rgb(215, 233, 233); /* Couleur de fond */
-
-	margin-top: 20px; /* Espace extérieur au-dessus du footer */
+	padding-bottom: 10px;
+	padding-top: 20px;
 	text-align: center; /* Centrer le texte */
+}
+
+footer a {
+	color: blue;
+	text-decoration: underline;
 }

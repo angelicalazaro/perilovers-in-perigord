@@ -18,9 +18,10 @@ function Header() {
 						</Link>
 					</button>
 
-					<button type="button" className="boutons_du_footer">
+					<button type="button" className="boutons_du_footer"><Link to="/">
 						Nos événements{" "}
 						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/expressif07.gif" />
+					</Link>
 					</button>
 
 					<button type="button" className="boutons_du_footer">
