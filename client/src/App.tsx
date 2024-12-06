@@ -16,8 +16,6 @@ function App() {
 			<div className="gcse-search"></div>
 			<main>
 				<Outlet />
-
-				{/* biome-ignore lint/a11y/useAltText: <explanation> */}
 			</main>
 			<footer>
 				<p className="liens_footer">

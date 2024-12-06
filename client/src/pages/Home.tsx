@@ -22,6 +22,7 @@ function Home() {
 			<header>
 				<Header />
 			</header>
+
 			<div>
 				<p className="visitor">
 					Visiteurs : {visitorCount}{" "}
@@ -31,7 +32,15 @@ function Home() {
 					/>
 				</p>
 			</div>
-
+			<div className="banniere">
+				<div className="texte-defilant">
+					N°1 des sites de rencontre pour Périgordins et Périgordins{" "}
+					<img
+						src="https://www.smiley-lol.com/smiley/drague/amour/emotlove28.gif"
+						alt="test"
+					/>
+				</div>
+			</div>
 			<img
 				src="../assets/images/pub_charantaises.png"
 				alt="charantaise forever"

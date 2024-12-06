@@ -151,3 +151,33 @@
 	padding: .25em;
 	font-family: "Times New Roman", Times, serif;
 }
+
+.banniere {
+	overflow: hidden;
+	white-space: nowrap;
+	background-color: #ffff00;
+	color: #000;
+	font-size: 20px;
+	border: 1px solid #ffff00;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 30em;
+}
+
+.texte-defilant {
+	display: inline-block;
+	position: absolute;
+	animation: defilement 10s linear infinite;
+	color: green;
+}
+
+@keyframes defilement {
+	from {
+		left: 100%;
+	}
+	to {
+		left: -100%;
+	}
+}
