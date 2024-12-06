@@ -18,3 +18,8 @@ footer a {
 	color: blue;
 	text-decoration: underline;
 }
+
+body {
+	cursor: url("http://www.zingerbug.com/cursors/cursors/spinning_heart_lavendar.gif"),
+		auto;
+}
