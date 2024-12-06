@@ -1,6 +1,7 @@
 import type React from "react";
 import { useState } from "react";
 import "../CSS/ProfilePage.css";
+import Logo from "../assets/images/Logo.png";
 
 const ProfilePage = () => {
 	const [email, setEmail] = useState("");
@@ -21,8 +22,7 @@ const ProfilePage = () => {
 	return (
 		<div className="profile-page">
 			<header>
-				<div className="logo">LOGO</div>
-				<h1>PAGE PROFILES</h1>
+				<img src={Logo} alt="Logo_Périlove" id="Logo" />
 			</header>
 
 			<main className="profile-container">
@@ -55,7 +55,7 @@ const ProfilePage = () => {
 								/>
 							</div>
 							<div className="search-field">
-								<label>je cherche</label>
+								<label>Je recherche</label>
 								<input
 									type="text"
 									value={searchCriteria.seeking}
@@ -68,7 +68,7 @@ const ProfilePage = () => {
 								/>
 							</div>
 							<div className="search-field">
-								<label>âge de</label>
+								<label>Âge de</label>
 								<input
 									type="number"
 									value={searchCriteria.ageFrom}
@@ -79,7 +79,7 @@ const ProfilePage = () => {
 										})
 									}
 								/>
-								<label>à</label>
+								<label>Â</label>
 								<input
 									type="number"
 									value={searchCriteria.ageTo}
@@ -94,7 +94,7 @@ const ProfilePage = () => {
 						</div>
 
 						<div className="login-section">
-							<p>Vous êtes déjà inscrit ?</p>
+							<p>Êtes-vous déjà inscrit ?</p>
 							<input
 								type="email"
 								placeholder="adresse email"
@@ -114,7 +114,7 @@ const ProfilePage = () => {
 										checked={rememberMe}
 										onChange={(e) => setRememberMe(e.target.checked)}
 									/>
-									se souvenir de moi
+									Ce souvenir de moi
 								</label>
 							</div>
 							<button type="submit">Se connecter</button>
