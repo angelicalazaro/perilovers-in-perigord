@@ -1,7 +1,6 @@
-import img from "../assets/images/pub_charantaises.png";
 import EvenementsList from "../components/EvenementsList";
 import { events } from "../components/Evenements";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../CSS/Home.css";
 import Header from "../components/header";
 
@@ -24,10 +23,25 @@ function Home() {
 				<Header />
 			</header>
 			<div>
-				<p className="visitor">Visiteurs : {visitorCount}</p>
+				<p className="visitor">
+					Visiteurs : {visitorCount}{" "}
+					<img
+						src="https://www.smiley-lol.com/smiley/energique/sautillant.gif"
+						alt="test"
+					/>
+				</p>
 			</div>
-			<h2>Nos événements</h2>
-			<EvenementsList evenements={events} />
+
+			<img
+				src="../assets/images/pub_charantaises.png"
+				alt="charantaise forever"
+			/>
+			<h2 id="nos_events" className="rainbow">
+				<span className="text">Nos événements</span>
+			</h2>
+			<div id="events">
+				<EvenementsList evenements={events} />
+			</div>
 		</>
 	);
 }

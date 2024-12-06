@@ -1,30 +1,43 @@
 // import Vichy from "../assets/images/Vichy.jpg";
-import "./header.css";
+import "../CSS/header.css";
 import Logo from "../assets/images/Logo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
 	return (
 		<>
 			<header>
-				<img src={Logo} alt="Logo_Périlove" id="Logo" />
+				<Link to="/">
+					<img src={Logo} alt="Logo_Périlove" id="Logo" />
+				</Link>
 				<nav className="NavBar">
 					<button type="button" className="boutons_du_footer">
-						Nos membres
+						<Link to="/profils">
+							Nos membres{" "}
+							<img src="https://www.smiley-lol.com/smiley/heureux/coeurtendu.gif" />
+						</Link>
+					</button>
+
+					<button type="button" className="boutons_du_footer">
+						Nos événements{" "}
+						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/expressif07.gif" />
+					</button>
+
+					<button type="button" className="boutons_du_footer">
+						Livre d'or{" "}
+						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/blah1.gif" />
 					</button>
 					<button type="button" className="boutons_du_footer">
-						Nos événements
+						Forum{" "}
+						<img src="https://www.smiley-lol.com/smiley/ordinateurs/ordi1fun.gif" />
 					</button>
 					<button type="button" className="boutons_du_footer">
-						Livre d'or
+						FAQ{" "}
+						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/secret02.gif" />
 					</button>
 					<button type="button" className="boutons_du_footer">
-						Forum
-					</button>
-					<button type="button" className="boutons_du_footer">
-						FAQ
-					</button>
-					<button type="button" className="boutons_du_footer">
-						Aidez-moi !
+						Aidez-moi !{" "}
+						<img src="https://www.smiley-lol.com/smiley/halloween-peur/peurblanc.gif" />
 					</button>
 				</nav>
 

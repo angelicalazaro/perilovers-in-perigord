@@ -7,20 +7,17 @@ import { events } from "./components/Evenements";
 import Home from "./pages/Home.tsx";
 // import Home from “./pages/Home”;
 // import LoginPage from “./pages/LoginPage”;
+
 function App() {
 	return (
 		<>
-			<div>
-				<script
-					async
-					src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e"
-				/>
-			</div>
+			<script async src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e" />
+
 			<div className="gcse-search"></div>
 			<main>
 				<Outlet />
 
-				<img src="../assets/images/pub_charantaises.png" />
+				{/* biome-ignore lint/a11y/useAltText: <explanation> */}
 			</main>
 			<footer>
 				<p className="liens_footer">

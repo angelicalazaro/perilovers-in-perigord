@@ -21,7 +21,8 @@ header {
 	align-items: center;
 }
 
-.boutons_du_footer {
+.boutons_du_footer,
+r {
 	width: 80%;
 	margin-top: 8px;
 }
@@ -31,6 +32,10 @@ main {
 	padding: 20px;
 }
 
+header a {
+	color: rgb(255, 255, 255);
+	text-decoration: none; /* Supprime le soulignement, facultatif */
+}
 .boutons_du_footer {
 	width: 80%;
 	margin-top: 22px;
@@ -39,7 +44,7 @@ main {
 	font-weight: bold;
 	height: 50px;
 	border-width: 5px;
-	color: rgb(255, 255, 255);
+
 	border-color: rgba(192, 51, 155, 1);
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;

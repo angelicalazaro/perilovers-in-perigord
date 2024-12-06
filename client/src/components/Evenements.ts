@@ -9,6 +9,17 @@ export interface Evenement {
 
 export const events: Evenement[] = [
 	{
+		id: 0,
+		name: "Musée de la Pantoufle Charentaise ",
+		description:
+			"Aventureux? direction la Charente. Découvrez le Musée de la Charentaise, où tradition et savoir-faire se mêlent pour conter l’histoire d’un emblème du confort.",
+		date: "samedi 7 décembre 2024",
+		lieu: "Varaignes",
+		picture:
+			"https://api.cloudly.space/resize/clip/1900/1080/75/aHR0cHM6Ly9jZHQyNC5tZWRpYS50b3VyaW5zb2Z0LmV1L3VwbG9hZC9NZXRpZXItYS1ydWJhbnMtMi5KUEc=/image.jpg",
+	},
+
+	{
 		id: 1,
 		name: "Musée du Liège et du Bouchon ",
 		description:
