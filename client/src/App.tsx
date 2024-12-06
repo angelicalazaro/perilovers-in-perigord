@@ -1,12 +1,5 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-// import img from “./assets/images/sau1teur.gif”;
-
-import EvenementsList from "./components/EvenementsList";
-import { events } from "./components/Evenements";
-import Home from "./pages/Home.tsx";
-// import Home from “./pages/Home”;
-// import LoginPage from “./pages/LoginPage”;
 
 function App() {
 	return (

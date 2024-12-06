@@ -5,12 +5,8 @@ body {
 	box-sizing: border-box;
 }
 
-.profile-page {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
+.text img {
+width: 1em;
 }
 
 .profile-container {
