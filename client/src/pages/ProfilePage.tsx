@@ -48,7 +48,12 @@ const ProfilePage: React.FC = () => {
 		};
 
 		fetchProfiles();
-	}, []);
+
+		// Cleanup function to prevent state updates after the component unmounts
+		return () => {
+			setProfiles([]); // Reset profiles when component unmounts
+		};
+	}, []); // Empty dependency array ensures this effect runs once when the component mounts
 
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
@@ -56,7 +61,11 @@ const ProfilePage: React.FC = () => {
 	};
 
 	return (
+		
 		<div className="profile-page">
+<h2 id="nos_events" className="rainbow">
+				<span className="text">Nos profils <img src="https://code.divshot.com/geo-bootstrap/img/test/hot.gif"/></span>
+			</h2>
 			<header>
 				<Header />
 			</header>

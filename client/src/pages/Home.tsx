@@ -26,7 +26,6 @@ function Home() {
 		script.async = true;
 		document.body.appendChild(script);
 
-		// Nettoyage
 		return () => {
 			document.body.removeChild(script);
 		};
@@ -49,17 +48,14 @@ function Home() {
 			</div>
 			<div className="banniere">
 				<div className="texte-defilant">
-					N°1 des sites de rencontre pour Périgordins et Périgordins{" "}
+					N°1 des sites de rencontre pour Périgordins et Périgordines{" "}
 					<img
 						src="https://www.smiley-lol.com/smiley/drague/amour/emotlove28.gif"
 						alt="test"
 					/>
 				</div>
 			</div>
-			<img
-				src="../assets/images/pub_charantaises.png"
-				alt="charantaise forever"
-			/>
+
 
 			<div className="gcse-search">
 				<img
