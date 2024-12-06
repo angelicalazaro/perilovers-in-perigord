@@ -33,9 +33,19 @@ body {
 	font-weight: bold;
 }
 
-h1 {
-	font-size: 36px;
+header h1 {
+	position: absolute; /* Positionner le h1 par rapport au parent (header) */
+	top: 50%; /* Centrer verticalement */
+	left: 50%; /* Centrer horizontalement */
+	transform: translate(-50%, -50%); /* Ajuste la position pour que le centre du h1 soit exactement au centre */
+	font-size: 80px; /* Grande taille de police pour le titre */
+	color: #ff00ff; /* Choisissez une couleur vive pour le titre */
+	text-align: center; /* Centrer le texte */
+	z-index: 10; /* Assurez-vous que le titre soit au-dessus de tout autre contenu */
 	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .profile-container {
@@ -74,6 +84,27 @@ h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0px;
 	padding: 0px;
+
+	/* Animation des bordures */
+	animation: borderColorBlink 2s infinite;
+}
+
+@keyframes borderColorBlink {
+	0% {
+		border-color: #ff0000;
+	}
+	25% {
+		border-color: #00ff00;
+	}
+	50% {
+		border-color: #0000ff;
+	}
+	75% {
+		border-color: #ffff00;
+	}
+	100% {
+		border-color: #ff0000;
+	}
 }
 
 .form-container {
@@ -152,4 +183,8 @@ button:hover {
 
 .remember-me {
 	margin-bottom: 20px;
+}
+
+main {
+	flex: 1;
 }

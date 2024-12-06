@@ -59,11 +59,9 @@ const ProfilePage: React.FC = () => {
 		<div className="profile-page">
 			<header>
 				<Header />
-				<div className="logo">LOGO</div>
-				<h1>PAGE PROFILES</h1>
 			</header>
 
-			<main className="profile-container">
+			<div className="profile-container">
 				<div className="profile-images">
 					{profiles.length > 0 ? (
 						profiles.map((profile) => (
@@ -99,7 +97,7 @@ const ProfilePage: React.FC = () => {
 								/>
 							</div>
 							<div className="search-field">
-								<label>Je cherche : </label>
+								<label>Je recherche</label>
 								<input
 									type="text"
 									value={searchCriteria.seeking}
@@ -123,7 +121,7 @@ const ProfilePage: React.FC = () => {
 										})
 									}
 								/>
-								<label>à : </label>
+								<label>À</label>
 								<input
 									type="number"
 									value={searchCriteria.ageTo}
@@ -138,7 +136,7 @@ const ProfilePage: React.FC = () => {
 						</div>
 
 						<div className="login-section">
-							<p>Vous êtes déjà inscrit(e) ?</p>
+							<p>Êtes-vous déjà inscrit ?</p>
 							<input
 								type="email"
 								placeholder="adresse email"
@@ -165,7 +163,7 @@ const ProfilePage: React.FC = () => {
 						</div>
 					</form>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 };
