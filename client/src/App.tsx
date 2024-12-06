@@ -11,18 +11,13 @@ import Home from "./pages/Home.tsx";
 function App() {
 	return (
 		<>
-			<div>
-				<script
-					async
-					src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e"
-				/>
-			</div>
+			<script async src="https://cse.google.com/cse.js?cx=b2615d1ca9908476e" />
+
 			<div className="gcse-search"></div>
 			<main>
 				<Outlet />
 
 				{/* biome-ignore lint/a11y/useAltText: <explanation> */}
-
 			</main>
 			<footer>
 				<p className="liens_footer">

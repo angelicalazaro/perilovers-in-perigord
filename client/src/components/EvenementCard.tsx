@@ -9,18 +9,23 @@ function EvenementCard({ evenement }: EvenementCardProps) {
 
 	return (
 		<>
-			<figure className="card">
-        <img src = {evenement.picture}/>
-				<h3>{evenement.name}</h3>
-				<p>
-					{evenement.description} <br />
-					Lieu {evenement.lieu}
-					{evenement.date}
-				</p>{" "}
-				<button className="bouttonInscrit" onClick={() => setInscrit(!inscrit)}>
-					{inscrit ? "Je suis inscrit(e) " : "Je m'inscris"}
-				</button>
-			</figure>
+			<div className="card-container">
+				<figure className="card">
+					<img src={evenement.picture} />
+					<h3>{evenement.name}</h3>
+					<p>
+						{evenement.description} <br />
+						Lieu : {evenement.lieu} <br />
+						Date : {evenement.date}
+					</p>{" "}
+					<button
+						className="bouttonInscrit"
+						onClick={() => setInscrit(!inscrit)}
+					>
+						{inscrit ? "Je suis inscrit(e) " : "Je m'inscris"}
+					</button>
+				</figure>
+			</div>
 		</>
 	);
 }

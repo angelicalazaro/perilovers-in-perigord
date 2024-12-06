@@ -1,8 +1,67 @@
+/* main {
+	background-color: #c7ee91;
+} */
+
+.card {
+	background-image: url(https://img.freepik.com/vecteurs-libre/conception-motif-degrade-aquarelle-ombre_23-2149666260.jpg?t=st=1733422922~exp=1733426522~hmac=b0042392327d78dab86f5baad19ab517dfd311e8b8c5fe070b6240883ce1d49d&w=740);
+	width: 30%;
+	border: double black 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Times New Roman", Times, serif;
+	padding: 2%;
+	text-align: justify;
+	box-sizing: border-box; /* Inclure les marges/bordures dans la largeur/hauteur */
+}
+/* #events {
+	background-color: yellow;
+} */
+h3 {
+	text-transform: uppercase;
+	font-family: "Comic Neue", sans-serif;
+}
+
+#events img {
+	/* border: red solid 2px; */
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.bouttonInscrit {
+	width: 55%;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color: #ffec64;
+	border-radius: 6px;
+	border: 1px solid #ffaa22;
+	display: inline-block;
+	cursor: pointer;
+	color: #333333;
+	font-family: "Comic Neue", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffee66;
+	border: double black 3px;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes adaptatives */
+	gap: 20px; /* Espacement entre les cartes */
+	width: 100%;
+	max-width: 1200px; /* Largeur maximale du conteneur */
+	margin: 0 auto; /* Centrer le conteneur sur la page */
+}
+
 .visitor {
-background-color: blue;
-color:white;
-margin : 1.25em;
-width: 7em;
-padding: .25em;
-font-family: 'Times New Roman', Times, serif;
+	background-color: blue;
+	color: white;
+	margin: 1.25em;
+	width: 7em;
+	padding: .25em;
+	font-family: "Times New Roman", Times, serif;
 }
