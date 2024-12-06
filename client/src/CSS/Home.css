@@ -1,10 +1,82 @@
-/* main {
-	background-color: #c7ee91;
-} */
+#nos_events {
+	font-family: Arial, sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#nos_events.rainbow {
+	transform: scale(1, 1.5);
+	-webkit-transform: scale(1, 1.5);
+	-moz-transform: scale(1, 1.5);
+	-o-transform: scale(1, 1.5);
+	-ms-transform: scale(1, 1.5);
+}
+
+#nos_events.rainbow .text {
+	background: red;
+	background: -webkit-linear-gradient(
+		left,
+		#b306a9,
+		#ef2667,
+		#f42e2c,
+		#ffa509,
+		#fdfc00,
+		#55ac2f,
+		#0b13fd,
+		#a804af
+	);
+	background: -o-linear-gradient(
+		left,
+		#b306a9,
+		#ef2667,
+		#f42e2c,
+		#ffa509,
+		#fdfc00,
+		#55ac2f,
+		#0b13fd,
+		#a804af
+	);
+	background: -moz-linear-gradient(
+		left,
+		#b306a9,
+		#ef2667,
+		#f42e2c,
+		#ffa509,
+		#fdfc00,
+		#55ac2f,
+		#0b13fd,
+		#a804af
+	);
+	background: linear-gradient(
+		to right,
+		#b306a9,
+		#ef2667,
+		#f42e2c,
+		#ffa509,
+		#fdfc00,
+		#55ac2f,
+		#0b13fd,
+		#a804af
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 .card {
 	background-image: url(https://img.freepik.com/vecteurs-libre/conception-motif-degrade-aquarelle-ombre_23-2149666260.jpg?t=st=1733422922~exp=1733426522~hmac=b0042392327d78dab86f5baad19ab517dfd311e8b8c5fe070b6240883ce1d49d&w=740);
-	width: 30%;
 	border: double black 4px;
 	display: flex;
 	flex-direction: column;
@@ -12,25 +84,40 @@
 	font-family: "Times New Roman", Times, serif;
 	padding: 2%;
 	text-align: justify;
-	box-sizing: border-box; /* Inclure les marges/bordures dans la largeur/hauteur */
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 300px;
+	height: 465px;
+	overflow: hidden;
 }
-/* #events {
-	background-color: yellow;
-} */
-h3 {
+
+.card img {
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.card h3 {
 	text-transform: uppercase;
 	font-family: "Comic Neue", sans-serif;
+	font-size: 1.2em;
+	margin: 0.5em 0;
+}
+
+.card p {
+	flex-grow: 1;
 }
 
 #events img {
-	/* border: red solid 2px; */
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
 }
 
 .bouttonInscrit {
-	width: 55%;
+	width: 100%;
+	box-sizing: border-box;
 	box-shadow: 0px 1px 0px 0px #fff6af;
 	background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color: #ffec64;
@@ -48,13 +135,12 @@ h3 {
 	border: double black 3px;
 }
 
-.card-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes adaptatives */
-	gap: 20px; /* Espacement entre les cartes */
+.card .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
 	width: 100%;
-	max-width: 1200px; /* Largeur maximale du conteneur */
-	margin: 0 auto; /* Centrer le conteneur sur la page */
 }
 
 .visitor {
