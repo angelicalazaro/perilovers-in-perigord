@@ -3,6 +3,9 @@ import { events } from "../components/Evenements";
 import { useState, useEffect } from "react";
 import "../CSS/Home.css";
 import Header from "../components/header";
+import charantaisesImage from "../assets/images/pub_charantaises.png";
+import Crazy from "../assets/images/crazy.png";
+import Hots from "../assets/images/hots.png";
 
 function Home() {
 	const [visitorCount, setVisitorCount] = useState(10245); // Déplacez VisitorCounter ici
@@ -32,15 +35,24 @@ function Home() {
 				</p>
 			</div>
 
-			<img
-				src="../assets/images/pub_charantaises.png"
-				alt="charantaise forever"
-			/>
 			<h2 id="nos_events" className="rainbow">
 				<span className="text">Nos événements</span>
 			</h2>
-			<div id="events">
-				<EvenementsList evenements={events} />
+			<div className="content-container">
+				<div id="events">
+					<EvenementsList evenements={events} />
+				</div>
+				<div id="pub">
+					<div id="charentaises">
+						<img src={charantaisesImage} alt="charantaise forever" />
+					</div>
+					<div id="crazy">
+						<img src={Crazy} alt="crazy_frog" />
+					</div>
+					<div id="hot">
+						<img src={Hots} alt="Milf" />
+					</div>
+				</div>
 			</div>
 		</>
 	);

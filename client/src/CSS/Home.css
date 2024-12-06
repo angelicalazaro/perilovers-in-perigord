@@ -1,5 +1,22 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	z-index: 1000;
+	background-color: white;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
 #nos_events {
-	font-family: Arial, sans-serif;
+	font-family: "Comic Neue", sans-serif;
 	font-size: 4em;
 	font-weight: bold;
 	position: relative;
@@ -89,6 +106,8 @@
 	max-width: 300px;
 	height: 465px;
 	overflow: hidden;
+
+	width: 100%;
 }
 
 .card img {
@@ -150,4 +169,75 @@
 	width: 7em;
 	padding: .25em;
 	font-family: "Times New Roman", Times, serif;
+}
+@keyframes border-flash {
+	0% {
+		border-color: red;
+	}
+	33% {
+		border-color: green;
+	}
+	66% {
+		border-color: yellow;
+	}
+	100% {
+		border-color: red;
+	}
+}
+
+#pub {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#pub img {
+	width: 100%;
+}
+
+#charentaises {
+	width: 100%;
+	max-width: 250px;
+	text-align: center;
+	border: 5px solid red;
+	animation: border-flash 1s infinite;
+}
+
+#crazy {
+	width: 100%;
+	max-width: 250px;
+	text-align: center;
+	border: 5px solid red;
+	animation: border-flash 1s infinite;
+}
+
+#hot {
+	width: 100%;
+	max-width: 250px;
+	text-align: center;
+	border: 5px solid red;
+	animation: border-flash 1s infinite;
+}
+
+.content-container {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0;
+	align-items: start;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#events {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+	gap: 0px;
+	width: 102%;
+	max-width: 1255px;
+	margin: 0px -36px;
+	box-sizing: border-box;
+	overflow: hidden;
 }
