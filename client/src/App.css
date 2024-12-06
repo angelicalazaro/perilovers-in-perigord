@@ -1,3 +1,24 @@
+.liens_footer {
+	display: flex; /* Utilisation de Flexbox */
+	justify-content: space-between; /* Espacement uniforme entre les mots */
+	align-items: center; /* Alignement vertical au centre */
+	max-width: 600px; /* Largeur maximale pour la ligne */
+	margin: 0 auto; /* Centrer la ligne dans le footer */
+	padding: 10px; /* Espacement intérieur autour du texte */
+}
+
+footer {
+	background-color: rgb(215, 233, 233); /* Couleur de fond */
+	padding-bottom: 10px;
+	padding-top: 20px;
+	text-align: center; /* Centrer le texte */
+}
+
+footer a {
+	color: blue;
+	text-decoration: underline;
+}
+
 body {
 	cursor: url("http://www.zingerbug.com/cursors/cursors/spinning_heart_lavendar.gif"),
 		auto;
