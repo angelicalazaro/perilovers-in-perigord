@@ -153,3 +153,7 @@ button:hover {
 .remember-me {
 	margin-bottom: 20px;
 }
+
+main {
+	flex:1;
+}

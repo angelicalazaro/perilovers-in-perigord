@@ -123,7 +123,7 @@ const ProfilePage: React.FC = () => {
 										})
 									}
 								/>
-								<label>Â</label>
+								<label>À</label>
 								<input
 									type="number"
 									value={searchCriteria.ageTo}
