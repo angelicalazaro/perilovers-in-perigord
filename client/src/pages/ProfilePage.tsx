@@ -99,7 +99,7 @@ const ProfilePage: React.FC = () => {
 								/>
 							</div>
 							<div className="search-field">
-								<label>Je cherche : </label>
+								<label>Je recherche</label>
 								<input
 									type="text"
 									value={searchCriteria.seeking}
@@ -123,7 +123,7 @@ const ProfilePage: React.FC = () => {
 										})
 									}
 								/>
-								<label>à : </label>
+								<label>Â</label>
 								<input
 									type="number"
 									value={searchCriteria.ageTo}
@@ -138,7 +138,7 @@ const ProfilePage: React.FC = () => {
 						</div>
 
 						<div className="login-section">
-							<p>Vous êtes déjà inscrit(e) ?</p>
+							<p>Êtes-vous déjà inscrit ?</p>
 							<input
 								type="email"
 								placeholder="adresse email"
