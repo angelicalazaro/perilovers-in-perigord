@@ -271,3 +271,16 @@ body {
 	box-sizing: border-box;
 	overflow: hidden;
 }
+
+.gcse-search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.gcse-search img {
+	width: 30px; /* Taille de l'image GIF */
+	height: 30px;
+	cursor: pointer;
+}
