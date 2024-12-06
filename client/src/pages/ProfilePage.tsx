@@ -59,11 +59,9 @@ const ProfilePage: React.FC = () => {
 		<div className="profile-page">
 			<header>
 				<Header />
-				<div className="logo">LOGO</div>
-				<h1>PAGE PROFILES</h1>
 			</header>
 
-			<main className="profile-container">
+			<div className="profile-container">
 				<div className="profile-images">
 					{profiles.length > 0 ? (
 						profiles.map((profile) => (
@@ -165,7 +163,7 @@ const ProfilePage: React.FC = () => {
 						</div>
 					</form>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 };

@@ -18,13 +18,18 @@ function Header() {
 						</Link>
 					</button>
 
-					<button type="button" className="boutons_du_footer"><Link to="/">
-						Nos événements{" "}
-						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/expressif07.gif" />
-					</Link>
+					<button type="button" className="boutons_du_footer">
+						<Link to="/">
+							Nos événements{" "}
+							<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/expressif07.gif" />
+						</Link>
 					</button>
 
 					<button type="button" className="boutons_du_footer">
+						<img
+							src="https://code.divshot.com/geo-bootstrap/img/test/new.gif"
+							alt="new"
+						/>
 						Livre d'or{" "}
 						<img src="https://www.smiley-lol.com/smiley/expressifs/communiquer/blah1.gif" />
 					</button>

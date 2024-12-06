@@ -17,7 +17,7 @@ function EvenementCard({ evenement }: EvenementCardProps) {
 					<h3>{evenement.name}</h3>
 					<p>
 						{evenement.description} <br />
-						Lieu : {evenement.lieu} <br/>
+						Lieu : {evenement.lieu} <br />
 						Date : {evenement.date}
 					</p>{" "}
 					<button

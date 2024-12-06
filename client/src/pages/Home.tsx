@@ -17,6 +17,18 @@ function Home() {
 		return () => clearInterval(interval);
 	}, []);
 
+	useEffect(() => {
+		const script = document.createElement("script");
+		script.src = "https://cse.google.com/cse.js?cx=b2615d1ca9908476e";
+		script.async = true;
+		document.body.appendChild(script);
+
+		// Nettoyage
+		return () => {
+			document.body.removeChild(script);
+		};
+	}, []);
+
 	return (
 		<>
 			<header>
@@ -45,6 +57,15 @@ function Home() {
 				src="../assets/images/pub_charantaises.png"
 				alt="charantaise forever"
 			/>
+
+			<div className="gcse-search">
+				<img
+					src="https://gifcities.org/assets/search.gif"
+					alt="Recherche"
+					style={{ width: "30px", height: "30px", cursor: "pointer" }}
+				/>
+			</div>
+
 			<h2 id="nos_events" className="rainbow">
 				<span className="text">Nos événements</span>
 			</h2>
