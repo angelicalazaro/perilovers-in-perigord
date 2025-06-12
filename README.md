@@ -9,6 +9,15 @@
 **Périlovers in Périgord** is a deliberately nostalgic web project channeling the early 2000s internet: glitter gifs, scrolling banners, and all.  
 It's a playful React app that simulates a dating/travel platform for proud Périgord locals.
 
+## 👩‍💻 Team
+
+This project was created by:
+
+- Angelica Lazaro  
+- Lise Perard  
+- Bastien Faccinetto  
+- Jules Marcilloux  
+
 ## 💻 Tech Stack
 
 - **React.js**
